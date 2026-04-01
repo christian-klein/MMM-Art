@@ -1,3 +1,6 @@
+# MMM-Art cache folder
+public/cache/
+
 # Logs
 logs
 *.log
