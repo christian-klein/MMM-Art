@@ -52,12 +52,32 @@ Add the module to your `config/config.js` file:
     position: "fullscreen_above", // Recommended position
     config: {
         artworkList: [
-            'Q219831',    // The Night Watch (Rembrandt)
-            'Q15461864',   // The Large Blue Horses (Franz Marc)
-            'Q12418',    // Mona Lisa (Da Vinci)
-            'Q33082',    // Girl with a Pearl Earring (Vermeer)
-            'Q5582',     // The Starry Night (Van Gogh)
-        ],
+            "Q1189907",  // Water Lilies - Monet
+            "Q683274",   // Dance at Le Moulin de la Galette - Renoir
+            "Q3924387",  // Ballet Rehearsal - Degas
+            "Q3643151",  // The Boulevard Montmartre at Night - Pissarro
+            "Q15461864", // The Large Blue Horses - Marc
+            "Q19609199", // Composition VIII - Kandinsky
+            "Q54902221", // Lady in a Green Jacket - Macke
+            "Q19883652", // Street, Berlin - Kirchner
+            "Q12418",    // Mona Lisa - da Vinci
+            "Q185372",   // Girl with a Pearl Earring - Vermeer
+            "Q208758",   // Las Meninas - Velázquez
+            "Q151047",   // The Birth of Venus - Botticelli
+            "Q257580",   // The Fighting Temeraire - Turner
+            "Q969377",   // The Calling of Saint Matthew - Caravaggio
+            "Q219831",   // The Night Watch - Rembrandt
+            "Q311243",   // Wanderer above the Sea of Fog - Friedrich
+            "Q25729",    // The Persistence of Memory - Dali
+            "Q83872",    // Nighthawks - Hopper
+            "Q45585",    // The Starry Night - Van Gogh
+            "Q2395218",  // Woman with a Parasol - Monet
+            "Q3821820",  // The Ballet Class - Degas
+            "Q16531980", // Blue Dancers - Degas
+            "Q500985",   // The Hunters in the Snow - Bruegel
+            "Q15293656", // The Tower of Babel - Bruegel
+            "Q26708368",  // The Water-Lily Pond - Monet0
+            "Q112091493" // Little Owl - Dürer        ],
         activeDuration: 60 * 1000,   // Show art for 60 seconds
         inactiveDuration: 30 * 1000, // Return to mirror for 30 seconds
         animationSpeed: 1000,       // Fade in/out speed
