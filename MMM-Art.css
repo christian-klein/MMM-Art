@@ -1,0 +1,105 @@
+.MMM-Art-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99 !important;
+  /* Reduced z-index */
+  background-color: #000 !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  pointer-events: none;
+}
+
+.MMM-Art-fullscreen.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.MMM-Art-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.MMM-Art-info {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  /* Aligned to right */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  border-radius: 15px;
+  text-align: right;
+  /* Text aligned right */
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  max-width: 50%;
+  /* Reduced width */
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.MMM-Art-title {
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.MMM-Art-artist {
+  font-size: 24px;
+  font-weight: 400;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+.MMM-Art-details {
+  font-size: 18px;
+  color: #aaa;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.MMM-Art-description {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.4;
+  margin-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  font-style: italic;
+}
+
+/* Clock Styles */
+.MMM-Art-clock {
+  position: absolute;
+  top: 40px;
+  /* Increased padding */
+  left: 40px;
+  /* Increased padding */
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  z-index: 2000 !important;
+  /* Force high z-index */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.MMM-Art-time {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.MMM-Art-date {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #ddd;
+}
