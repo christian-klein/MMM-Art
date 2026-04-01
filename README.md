@@ -2,11 +2,10 @@
 
 A [MagicMirror²](https://magicmirror.builders/) module that transforms your mirror into a digital art gallery. It fetches high-quality artwork from [Wikidata](https://www.wikidata.org/) and displays it on a scheduled interval, hiding other modules to provide a clean, "framed" art experience.
 
-````carousel
+
 ![Default MagicMirror](doc/sample1.jpg)
-<!-- slide -->
 ![The Night Watch on MagicMirror](doc/sample2.jpg)
-````
+
 *(Example: Rembrandt's "The Night Watch" - [Q219831](https://www.wikidata.org/wiki/Q219831) 
 
 ## Features
