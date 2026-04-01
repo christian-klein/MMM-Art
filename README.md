@@ -2,8 +2,12 @@
 
 A [MagicMirror²](https://magicmirror.builders/) module that transforms your mirror into a digital art gallery. It fetches high-quality artwork from [Wikidata](https://www.wikidata.org/) and displays it on a scheduled interval, hiding other modules to provide a clean, "framed" art experience.
 
-![Example Art Display](https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Rembrandt_-_The_Night_Watch_-_Google_Art_Project.jpg/1280px-Rembrandt_-_The_Night_Watch_-_Google_Art_Project.jpg)
-*(Example: Rembrandt's "The Night Watch" - Q15461864)*
+````carousel
+![Default MagicMirror](doc/sample1.jpg)
+<!-- slide -->
+![The Night Watch on MagicMirror](doc/sample2.jpg)
+````
+*(Example: Rembrandt's "The Night Watch" - [Q219831](https://www.wikidata.org/wiki/Q219831) 
 
 ## Features
 
@@ -49,7 +53,8 @@ Add the module to your `config/config.js` file:
     position: "fullscreen_above", // Recommended position
     config: {
         artworkList: [
-            'Q15461864', // The Night Watch (Rembrandt)
+            'Q219831',    // The Night Watch (Rembrandt)
+            'Q15461864',   // The Large Blue Horses (Franz Marc)
             'Q12418',    // Mona Lisa (Da Vinci)
             'Q33082',    // Girl with a Pearl Earring (Vermeer)
             'Q5582',     // The Starry Night (Van Gogh)
@@ -82,6 +87,20 @@ Add the module to your `config/config.js` file:
    - **Active State**: The module hides all other MagicMirror modules and fades in the artwork.
    - **Inactive State**: The module fades out the artwork and shows all other modules.
 4. **Resiliency**: Includes a "lock" system to prevent re-processing failed images and uses the resolution reported by the browser to optimize image size.
+
+## How to Add Your Own Artwork
+
+This module uses **Wikidata IDs (Q-numbers)** to fetch artwork. You can easily find the ID for almost any famous painting in the world:
+
+1.  Go to [Wikidata.org](https://www.wikidata.org/).
+2.  Search for the name of the painting (e.g., *"Starry Night"* or *"The Kiss"*).
+3.  Look for the code starting with **Q** next to the title (e.g., `Q5582` for *The Starry Night*).
+4.  Copy this ID and add it to your `artworkList` array in `config.js`.
+
+### Tips
+- You can add as many IDs as you like to the list.
+- If a painting doesn't have a high-resolution image on Wikidata, the module will skip it automatically.
+- Check the [Category:Paintings on Wikidata](https://www.wikidata.org/wiki/Category:Paintings) for inspiration.
 
 ## License
 

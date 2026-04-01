@@ -1,6 +1,6 @@
 Module.register("MMM-Art", {
     defaults: {
-        artworkList: ['Q15461864'], // Default: The Night Watch
+        artworkList: ['Q219831'], // Default: The Night Watch (Rembrandt)
         activeDuration: 30 * 1000, // 30 seconds
         inactiveDuration: 30 * 1000, // 30 seconds
         animationSpeed: 1000,
