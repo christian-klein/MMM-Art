@@ -98,8 +98,7 @@ This module uses **Wikidata IDs (Q-numbers)** to fetch artwork. You can easily f
 
 ### Tips
 - You can add as many IDs as you like to the list.
-- If a painting doesn't have a high-resolution image on Wikidata, the module will skip it automatically.
-- Check the [Category:Paintings on Wikidata](https://www.wikidata.org/wiki/Category:Paintings) for inspiration.
+- Paintings are downloaded and resized and will show an empty screen until that process has finished, which can take a while on slower systems.
 
 ## License
 
